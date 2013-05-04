@@ -1,4 +1,5 @@
 require "gesund/mysql/version"
+require "gesund/checks/mysql_connection"
 
 module Gesund
   module Mysql
