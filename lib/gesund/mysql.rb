@@ -1,3 +1,4 @@
+require "gesund"
 require "gesund/mysql/version"
 require "gesund/checks/mysql_connection"
 

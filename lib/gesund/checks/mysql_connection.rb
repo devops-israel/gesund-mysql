@@ -3,15 +3,12 @@ require "mysql"
 module Gesund::Checks
   class MysqlConnection
     include Gesund::Check
-    def initialize(options)
+    def initialize(options={})
       begin
-        require 'pp'
         ::Mysql.new.ping.close # raises exception on failure
-        self.message = "MySQL is answering to a ping"
-        self.success = true
+        self.pass "MySQL is answering to a ping"
       rescue => e
-        self.message = "#{e.class}: #{e.message}"
-        self.success = false
+        self.fail "#{self.class} ERROR: #{e.class}: #{e.message}"
       end
     end
   end
