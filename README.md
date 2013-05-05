@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devops-israel/gesund-mysql.png)](https://travis-ci.org/devops-israel/gesund-mysql)
+
 # Gesund::Mysql
 
 TODO: Write a gem description
