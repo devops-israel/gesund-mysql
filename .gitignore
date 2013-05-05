@@ -1,9 +1,8 @@
 *.gem
 *.rbc
-.bundle
+/bundle
 .config
 .yardoc
-Gemfile.lock
 InstalledFiles
 _yardoc
 coverage
